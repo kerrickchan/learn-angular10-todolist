@@ -1,0 +1,19 @@
+.delete {
+  background: #ff0000;
+  color: #fff;
+  float: right;
+  padding: 5px 9px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.todo {
+  background: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px #ccc dotted;
+}
+
+.completed {
+  text-decoration: line-through;
+}
