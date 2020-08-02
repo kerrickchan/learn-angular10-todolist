@@ -18,7 +18,11 @@ export class TodoComponent implements OnInit {
     });
   }
 
-  handleDelete(todo: Todo): void {
+  handleAddTodoItem(todo: Todo): void {
+    this.todoService.handleAdd(todo).subscribe(serverToDo => this.todos.push(serverToDo));
+  }
+
+  handleTodoItemDelete(todo: Todo): void {
     this.todos = this.todos.filter(t => t.id !== todo.id);
   }
 }
